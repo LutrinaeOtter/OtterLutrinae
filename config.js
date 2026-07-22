@@ -26,3 +26,4 @@ const CONFIG = {
     btnAccept: 'Oke',
 
     messLink: 'https://www.facebook.com/lutrinae.otter/'
+}
