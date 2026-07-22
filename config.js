@@ -1,29 +1,28 @@
 const CONFIG = {
     introTitle: 'Này bà 🙂',
 
-    introDesc: `Có một câu hỏi...
-    Mà tui hỏi trực tiếp thì hơi ngại.`,
+    introDesc: `Tui làm cái này...
+    Chỉ mất vài phút thôi.`,
 
-    btnIntro: 'Hỏi đi',
+    btnIntro: 'Xem thử',
 
-    title: 'Theo bà...',
+    title: 'Có một điều...',
 
-    desc: 'Bà tin vào chữ "duyên" không?',
+    desc: 'Không phải ai mình gặp cũng khiến mình muốn nói chuyện lâu hơn.',
 
-    btnYes: 'Có 🌷',
-    btnNo: 'Không 😆',
+    btnYes: 'Đúng đó 🌷',
+    btnNo: 'Chưa chắc 😆',
 
-    question: 'Nếu hai người nói chuyện hợp thì điều gì sẽ khiến một người trở nên đặc biệt hơn những người khác?',
+    question: 'Thôi thì cứ xem như đây là một lời tâm sự nhỏ nha. 🙂',
 
-    btnReply: 'Nói thử',
+    btnReply: 'Tiếp',
 
-    reply: 'Tui tò mò á 😌',
+    reply: '🌷',
 
-    mess: 'Cảm ơn bà. 🌷',
+    mess: 'Cảm ơn bà.',
 
-    messDesc: 'Vậy là bài test kết thúc. Kết quả... tui giữ bí mật nha.=))))',
+    messDesc: 'Chúc bà luôn có thật nhiều niềm vui mỗi ngày. 😊',
 
-    btnAccept: 'Được rồi',
+    btnAccept: 'Oke',
 
     messLink: 'https://www.facebook.com/lutrinae.otter/'
-}
