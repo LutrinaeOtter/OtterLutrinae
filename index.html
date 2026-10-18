@@ -1,51 +1,380 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <title>Gửi riêng một người 🌷</title>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/spinload.css">
-    <link rel="stylesheet" type="text/css" href=" https://fonts.googleapis.com/css?family=Pacifico" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  </head>
-  <body>
-    <div class="wrapper">
-      <!-- Preloader -->
-    <div id="preloader">
-      <div class="spinner">
-        <div class="rect1"></div>
-        <div class="rect2"></div>
-        <div class="rect3"></div>
-        <div class="rect4"></div>
-        <div class="rect5"></div>
-      </div>
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080b18">
+  <meta name="description" content="AI Study Coach - Dự án trợ lý học tập AI hướng đến sinh viên Trường Đại học Gia Định.">
+
+  <title>AI Study Coach × GDU</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="ambient" aria-hidden="true">
+    <div class="orb orb-one"></div>
+    <div class="orb orb-two"></div>
+    <div class="orb orb-three"></div>
   </div>
-      <div id="bg"></div>
-      <div class="content">
-        <header>
-          <h2 id="title"></h2>
-          <h4 id="desc"></h4>
-        </header>
-        <button id="yes" type="button" class="btn btn-danger btn-lg"> </button>
-        <button id="no" type="button" class="btn btn-info btn-lg"></button>
-      </div>
-    </div>
-    <audio src="./sound/sound.mp3" autoplay></audio>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script
-  src="https://code.jquery.com/jquery-3.4.1.js"
-  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
-  crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
-    <script src="./config.js"></script>
-    <script src="./js/main.js"></script>
 
-  </body>
+  <header class="site-header container">
+    <nav class="navbar glass">
+      <a href="#home" class="brand">
+        <span class="brand-mark">✦</span>
+        <span class="brand-text">
+          <strong>AI STUDY COACH</strong>
+          <small>For GDU Students</small>
+        </span>
+      </a>
+
+      <div class="nav-links">
+        <a href="#features">Tính năng</a>
+        <a href="#gdu">GDU</a>
+        <a href="#how">Cách hoạt động</a>
+        <a href="#try">Trải nghiệm</a>
+      </div>
+
+      <a
+        class="btn btn-primary nav-cta"
+        href="https://udify.app/chat/ExTZmTCwvjgzhMY6"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Thử chatbot ↗
+      </a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <div class="hero-content reveal">
+        <span class="eyebrow-pill">
+          ✦ AI STUDY COACH × GDU
+        </span>
+
+        <h1>
+          Học thông minh hơn.<br>
+          <span class="gradient-text">Tiến xa hơn.</span>
+        </h1>
+
+        <p class="hero-description">
+          Trợ lý học tập AI hướng đến sinh viên
+          Trường Đại học Gia Định (GDU).
+          Đồng hành cùng GDUer trong việc xây dựng kế hoạch,
+          ôn tập kiến thức và phát triển phương pháp học tập.
+        </p>
+
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#try">
+            Bắt đầu trải nghiệm →
+          </a>
+
+          <a class="btn btn-glass" href="#features">
+            Khám phá tính năng ↓
+          </a>
+        </div>
+
+        <p class="hero-note">
+          <span class="status-dot"></span>
+          Your personal AI study partner
+        </p>
+      </div>
+
+      <!-- DASHBOARD DEMO -->
+      <div class="dashboard glass reveal">
+        <div class="dashboard-top">
+          <span class="window-dots">● ● ●</span>
+          <span>STUDY SPACE / OVERVIEW</span>
+          <span>✦</span>
+        </div>
+
+        <div class="welcome-card">
+          <span class="small-label">HELLO, GDUer!</span>
+          <h3>Hôm nay mình học gì?</h3>
+          <p>Biến mục tiêu lớn thành những bước nhỏ.</p>
+        </div>
+
+        <div class="dashboard-stats">
+          <div class="stat-card">
+            <span>Mục tiêu tuần</span>
+            <strong>03 môn</strong>
+            <p>Chia nhỏ theo ưu tiên</p>
+            <div class="progress">
+              <i style="width: 70%"></i>
+            </div>
+          </div>
+
+          <div class="stat-card">
+            <span>Nhịp học gợi ý</span>
+            <strong>25 / 5</strong>
+            <p>Học tập trung · Nghỉ ngắn</p>
+            <div class="progress">
+              <i style="width: 82%"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="task-card">
+          <h4>KẾ HOẠCH HÔM NAY</h4>
+          <div class="task"><span>✓</span> Ôn kiến thức trọng tâm</div>
+          <div class="task"><span>✦</span> Luyện tập câu hỏi ngắn</div>
+          <div class="task"><span>○</span> Tổng kết bài học</div>
+        </div>
+
+        <p class="demo-caption">
+          Giao diện minh họa · Không phải dữ liệu học tập thực tế
+        </p>
+      </div>
+    </section>
+
+    <!-- GDU -->
+    <section class="section gdu-section" id="gdu">
+      <div class="gdu-panel glass reveal">
+        <div class="gdu-logo-box">
+          <img
+            src="assets/logo-gdu.png"
+            alt="Logo Trường Đại học Gia Định"
+            class="gdu-logo"
+            onerror="this.style.display='none'; this.nextElementSibling.style.display='block';"
+          >
+          <span class="gdu-logo-fallback">GDU</span>
+        </div>
+
+        <div class="gdu-content">
+          <span class="kicker">MADE FOR GDUers</span>
+
+          <h2>
+            Đồng hành cùng sinh viên<br>
+            <span class="gradient-text">Đại học Gia Định.</span>
+          </h2>
+
+          <p>
+            Mỗi GDUer đều có mục tiêu và cách học riêng.
+            AI Study Coach được xây dựng với mong muốn
+            hỗ trợ sinh viên chủ động tiếp cận kiến thức,
+            sắp xếp thời gian và học tập hiệu quả hơn.
+          </p>
+
+          <div class="gdu-tags">
+            <span>✦ Học tập chủ động</span>
+            <span>◈ Sáng tạo</span>
+            <span>↗ Phát triển bản thân</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section class="section" id="features">
+      <div class="section-heading reveal">
+        <span class="kicker">TÍNH NĂNG NỔI BẬT</span>
+
+        <h2>
+          Một trợ lý.<br>
+          <span class="gradient-text">Nhiều cách tiến bộ.</span>
+        </h2>
+
+        <p>
+          Từ việc xây dựng lịch học đến ôn tập kiến thức,
+          AI Study Coach hỗ trợ bạn học theo mục tiêu riêng.
+        </p>
+      </div>
+
+      <div class="feature-grid">
+        <article class="feature glass reveal">
+          <div class="feature-icon">◈</div>
+          <h3>Kế hoạch cá nhân hóa</h3>
+          <p>
+            Lên lịch học dựa trên môn học, mục tiêu,
+            thời hạn và thời gian rảnh.
+          </p>
+        </article>
+
+        <article class="feature glass reveal">
+          <div class="feature-icon">⌁</div>
+          <h3>Gỡ rối kiến thức</h3>
+          <p>
+            Giải thích từng bước, đưa ra ví dụ
+            và giúp bạn hiểu nội dung khó.
+          </p>
+        </article>
+
+        <article class="feature glass reveal">
+          <div class="feature-icon">✧</div>
+          <h3>Ôn tập chủ động</h3>
+          <p>
+            Tạo câu hỏi luyện tập, bài kiểm tra nhanh
+            và flashcard hỗ trợ ghi nhớ.
+          </p>
+        </article>
+
+        <article class="feature glass reveal">
+          <div class="feature-icon">◷</div>
+          <h3>Quản lý thời gian</h3>
+          <p>
+            Chia nhiệm vụ lớn thành các phiên học ngắn
+            và sắp xếp thời gian nghỉ hợp lý.
+          </p>
+        </article>
+
+        <article class="feature glass reveal">
+          <div class="feature-icon">↗</div>
+          <h3>Điều chỉnh linh hoạt</h3>
+          <p>
+            Thay đổi kế hoạch khi lịch học,
+            deadline hoặc mục tiêu thay đổi.
+          </p>
+        </article>
+
+        <article class="feature glass reveal">
+          <div class="feature-icon">◎</div>
+          <h3>Nhìn lại tiến độ</h3>
+          <p>
+            Tổng kết những gì đã thực hiện
+            dựa trên thông tin bạn chia sẻ với AI.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section class="section how-section" id="how">
+      <div class="how-content reveal">
+        <span class="kicker">BẮT ĐẦU THẬT ĐƠN GIẢN</span>
+
+        <h2>
+          Không cần biết<br>
+          <span class="gradient-text">bắt đầu từ đâu.</span>
+        </h2>
+
+        <p>
+          Hãy kể cho trợ lý biết bạn đang học gì,
+          muốn đạt điều gì và đang gặp khó khăn ở đâu.
+        </p>
+
+        <a
+          class="btn btn-primary"
+          href="https://udify.app/chat/ExTZmTCwvjgzhMY6"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Trò chuyện với AI ↗
+        </a>
+      </div>
+
+      <div class="steps">
+        <div class="step glass reveal">
+          <span class="step-number">01</span>
+          <div>
+            <h3>Chia sẻ tình hình</h3>
+            <p>Môn học, mục tiêu, lịch trình và khó khăn hiện tại.</p>
+          </div>
+        </div>
+
+        <div class="step glass reveal">
+          <span class="step-number">02</span>
+          <div>
+            <h3>Nhận kế hoạch phù hợp</h3>
+            <p>AI đề xuất các bước cụ thể dựa trên thông tin bạn cung cấp.</p>
+          </div>
+        </div>
+
+        <div class="step glass reveal">
+          <span class="step-number">03</span>
+          <div>
+            <h3>Thử và điều chỉnh</h3>
+            <p>Thực hiện, phản hồi và cập nhật kế hoạch khi cần.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CHATBOT CTA: NO IFRAME -->
+    <section class="section" id="try">
+      <div class="try-panel glass reveal">
+        <div class="try-content">
+          <span class="kicker">YOUR NEXT STUDY SESSION STARTS HERE</span>
+
+          <h2>
+            Sẵn sàng học tập<br>
+            <span class="gradient-text">cùng AI?</span>
+          </h2>
+
+          <p>
+            Khám phá trợ lý học tập AI dành cho GDUer.
+            Chia sẻ mục tiêu, nhận gợi ý kế hoạch
+            và tìm phương pháp học phù hợp với bạn.
+          </p>
+        </div>
+
+        <a
+          class="btn btn-primary"
+          href="https://udify.app/chat/ExTZmTCwvjgzhMY6"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Trải nghiệm AI Study Coach ↗
+        </a>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section" id="faq">
+      <div class="section-heading reveal">
+        <span class="kicker">THÔNG TIN CẦN BIẾT</span>
+        <h2>Học theo cách <span class="gradient-text">phù hợp với bạn.</span></h2>
+      </div>
+
+      <div class="faq-grid">
+        <details class="glass reveal">
+          <summary>AI có thay thế giảng viên không?</summary>
+          <p>
+            Không. AI Study Coach là công cụ hỗ trợ học tập.
+            Bạn nên đối chiếu thông tin quan trọng với giáo trình
+            và hướng dẫn của giảng viên.
+          </p>
+        </details>
+
+        <details class="glass reveal">
+          <summary>AI có tự lưu tiến độ học tập không?</summary>
+          <p>
+            Khả năng lưu và ghi nhớ lâu dài phụ thuộc vào
+            cấu hình chatbot và hệ thống lưu trữ được triển khai.
+          </p>
+        </details>
+
+        <details class="glass reveal">
+          <summary>Tôi có thể thay đổi lịch học không?</summary>
+          <p>
+            Có. Hãy cung cấp lịch trình mới để AI giúp bạn
+            điều chỉnh kế hoạch cho phù hợp.
+          </p>
+        </details>
+
+        <details class="glass reveal">
+          <summary>Đây có phải website chính thức của GDU không?</summary>
+          <p>
+            Không. Đây là dự án AI Study Coach hướng đến
+            hỗ trợ học tập cho sinh viên GDU,
+            không phải hệ thống chính thức của nhà trường.
+          </p>
+        </details>
+      </div>
+    </section>
+  </main>
+
+  <footer class="container footer">
+    <a href="#home" class="brand">
+      <span class="brand-mark">✦</span>
+      <span>AI STUDY COACH</span>
+    </a>
+
+    <p>Dự án hỗ trợ học tập dành cho GDUer.</p>
+    <p>© <span id="year"></span> AI Study Coach</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
 </html>
